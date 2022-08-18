@@ -9,7 +9,7 @@ const prepareStateFromWord = given_word => {
     return {
         word,
         chars,
-        attempt: 1,
+        attempt:1,
         guess: '',
         completed: false
     }
@@ -37,6 +37,7 @@ export default function WordCard(props){
         }
     }
     return (
+    <h1>Your round {attempt}
         <div>
             {
                 state.chars.map((c, i) =>
@@ -44,6 +45,7 @@ export default function WordCard(props){
                 )
             }
         </div>
+        </h1>
     )
     }
 
